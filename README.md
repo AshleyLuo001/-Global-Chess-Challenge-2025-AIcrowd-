@@ -32,6 +32,7 @@ Instead of feeding raw FEN strings, we translate the board state and legal moves
 
 **Output (Target Label):**
 ```xml
+<think>one-sentence rationale</think>
 <uci_move>e2e4</uci_move>
 ```
 
