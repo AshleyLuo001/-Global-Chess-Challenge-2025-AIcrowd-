@@ -4,8 +4,7 @@
 
 This repository contains the full engineering pipeline and source code for **Qwen-ChessOracle**, the 3rd place winning solution for the [Global Chess Challenge 2025](https://www.aicrowd.com/challenges/global-chess-challenge-2025) hosted on AIcrowd.
 
-
-
+![image](meta/1b43332cf26d8a867f1dfb97170128d9.png)
 ## 💡 Solution Architecture
 
 This approach frames chess move prediction as a sequence-to-sequence language modeling task. We fine-tuned the highly efficient **Qwen3-0.6B** model using the ModelScope SWIFT framework. 
@@ -79,4 +78,5 @@ bash scripts/run_sft.sh
 
 
 ## 🏆 Results
+![image](meta/ebdd29df9682b2863cdc390c92e1aace.png)
 * **Final Rank:** 3rd Place (Bronze Medal) 🥉
