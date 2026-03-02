@@ -1,0 +1,8 @@
+pandas
+polars
+python-chess
+joblib
+tqdm
+transformers
+ms-swift
+deepspeed
