@@ -1,6 +1,6 @@
 # 🏆 Qwen-ChessOracle: 3rd Place Solution for Global Chess Challenge 2025
 
-[![Medal](https://img.shields.io/badge/AIcrowd-3rd_Place_Bronze-orange.svg)](https://www.aicrowd.com/challenges/global-chess-challenge-2025) [![Model](https://img.shields.io/badge/Base_Model-Qwen3--0.6B-blue.svg)]() [![Framework](https://img.shields.io/badge/Framework-ModelScope_SWIFT-brightgreen.svg)]() [![Dataset](https://img.shields.io/badge/Dataset-Lichess_Sept_2025-lightgrey.svg)]()
+[![Medal](https://img.shields.io/badge/AIcrowd-3rd_Place_Bronze-orange.svg)](https://www.aicrowd.com/challenges/global-chess-challenge-2025) [![Model](https://img.shields.io/badge/Base_Model-Qwen3--0.6B-blue.svg)]() [![Framework](https://img.shields.io/badge/Framework-ModelScope_SWIFT-brightgreen.svg)]() [![Dataset](https://img.shields.io/badge/Dataset-Lichess_Sept_2025-lightgrey.svg)]() [![Weights](https://img.shields.io/badge/Weights-Hugging_Face-yellow.svg)](https://huggingface.co/AshleyLuo/Qwen-ChessOracle) [![GitHub stars](https://img.shields.io/github/stars/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-?style=flat&logo=github&color=gold)](https://github.com/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-/stargazers)
 
 This repository contains the full engineering pipeline and source code for **Qwen-ChessOracle**, the 3rd place winning solution for the [Global Chess Challenge 2025](https://www.aicrowd.com/challenges/global-chess-challenge-2025) hosted on AIcrowd.
 
@@ -35,12 +35,15 @@ Instead of feeding raw FEN strings, we translate the board state and legal moves
 <uci_move>e2e4</uci_move>
 ```
 
+
+
 ## 📊 Dataset
 
 The training data is sourced from the official [Lichess Standard Chess Games](https://huggingface.co/datasets/Lichess/standard-chess-games) dataset (September 2025 partition). 
 * Over 2.8 million raw games were parsed.
 * Only decisive games (`1-0`, `0-1`, `1/2-1/2`) were kept.
 * Multiprocessing was utilized to handle the massive PGN parsing overhead.
+
 
 ## 📂 Repository Structure
 * `src/`: Python source code for data parsing, multiprocessing, and tokenizer modification.
@@ -75,8 +78,20 @@ bash scripts/run_export.sh
 bash scripts/run_sft.sh
 ```
 
+## 📥 Pre-trained Weights
 
+We have open-sourced our fine-tuned model weights. You can directly download or load the model for inference without retraining:
 
+👉 **[AshleyLuo/Qwen-ChessOracle on Hugging Face](https://huggingface.co/AshleyLuo/Qwen-ChessOracle)**
+
+You can load it directly via Transformers:
+```python
+from transformers import AutoModelForCausalLM, AutoTokenizer
+
+model_name = "AshleyLuo/Qwen-ChessOracle"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+model = AutoModelForCausalLM.from_pretrained(model_name, device_map="auto")
+```
 ## 🏆 Results
 ![image](meta/ebdd29df9682b2863cdc390c92e1aace.png)
 * **Final Rank:** 3rd Place (Bronze Medal) 🥉
