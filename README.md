@@ -50,8 +50,8 @@ The training data is sourced from the official [Lichess Standard Chess Games](ht
 ## 📂 Repository Structure
 * `src/`: Python source code for data parsing, multiprocessing, and tokenizer modification.
 * `scripts/`: Bash scripts to execute data caching and SFT training.
-* `predict.py`: Inference script to load the trained model and predict the best move for a given FEN.
-* `data/` & `models/`: Directories for raw parquets, features, and model checkpoints (ignored in `.gitignore`).
+
+* `data/` & `models/`: Directories for raw parquets, features, and model checkpoints.
 
 ## 🛠️ Quick Start
 
