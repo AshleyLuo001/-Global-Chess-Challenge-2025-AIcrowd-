@@ -1,6 +1,8 @@
 # 🏆 Qwen-ChessOracle: 3rd Place Solution for Global Chess Challenge 2025
 
-[![Medal](https://img.shields.io/badge/AIcrowd-3rd_Place_Bronze-orange.svg)](https://www.aicrowd.com/challenges/global-chess-challenge-2025) [![Model](https://img.shields.io/badge/Base_Model-Qwen3--0.6B-blue.svg)]() [![Framework](https://img.shields.io/badge/Framework-ModelScope_SWIFT-brightgreen.svg)]() [![Dataset](https://img.shields.io/badge/Dataset-Lichess_Sept_2025-lightgrey.svg)]() [![Weights](https://img.shields.io/badge/Weights-Hugging_Face-yellow.svg)](https://huggingface.co/AshleyLuo/Qwen-ChessOracle) [![GitHub stars](https://img.shields.io/github/stars/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-?style=flat&logo=github&color=gold)](https://github.com/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-/stargazers)
+[![Medal](https://img.shields.io/badge/AIcrowd-3rd_Place_Bronze-orange.svg)](https://www.aicrowd.com/challenges/global-chess-challenge-2025) [![Model](https://img.shields.io/badge/Base_Model-Qwen3--0.6B-blue.svg)]() [![Framework](https://img.shields.io/badge/Framework-ModelScope_SWIFT-brightgreen.svg)]() [![Dataset](https://img.shields.io/badge/Dataset-Lichess_Sept_2025-lightgrey.svg)]() [![Weights](https://img.shields.io/badge/Weights-Hugging_Face-yellow.svg)](https://huggingface.co/AshleyLuo/Qwen-ChessOracle) 
+
+<!-- [![GitHub stars](https://img.shields.io/github/stars/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-?style=flat&logo=github&color=gold)](https://github.com/AshleyLuo001/-Global-Chess-Challenge-2025-AIcrowd-/stargazers) -->
 
 This repository contains the full engineering pipeline and source code for **Qwen-ChessOracle**, the 3rd place winning solution for the [Global Chess Challenge 2025](https://www.aicrowd.com/challenges/global-chess-challenge-2025) hosted on AIcrowd.
 
@@ -82,7 +84,7 @@ bash scripts/run_sft.sh
 
 We have open-sourced our fine-tuned model weights. You can directly download or load the model for inference without retraining:
 
-👉 **[AshleyLuo/Qwen-ChessOracle on Hugging Face](https://huggingface.co/AshleyLuo/Qwen-ChessOracle)**
+👉 **[ChessOracle 0.8B](https://huggingface.co/AshleyLuo/Qwen-ChessOracle)**
 
 You can load it directly via Transformers:
 ```python
